@@ -15,7 +15,7 @@
         android:padding="8dp"
         android:gravity="center"
         android:textSize="24sp"/>
-    
+
     <EditText
         android:id="@+id/etTitulo"
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         android:hint="Título"/>
 
     <EditText
-        android:id="@+id/etDescripcion"
+        android:id="@+id/tvDescripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Descripción"/>
@@ -53,12 +53,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTareas"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layoutManager="androix.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="match_parent"
             android:padding="8dp"
             android:layout_margin="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_rv_tarea"/>
     </LinearLayout>
 </LinearLayout>
